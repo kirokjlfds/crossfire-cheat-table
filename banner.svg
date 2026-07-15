@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="cfbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1F25"/>
+      <stop offset="50%" style="stop-color:#2D3436"/>
+      <stop offset="100%" style="stop-color:#1A1F25"/>
+    </linearGradient>
+    <linearGradient id="cforange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CC5500"/>
+      <stop offset="50%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#CC5500"/>
+    </linearGradient>
+    <radialGradient id="muzzle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="cfglow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="cfClip"><rect width="900" height="300" rx="12"/></clipPath>
+  </defs>
+  <g clip-path="url(#cfClip)">
+    <rect width="900" height="300" fill="url(#cfbg)"/>
+    <!-- Military grid pattern -->
+    <g stroke="#FF6B35" stroke-width="0.3" opacity="0.05">
+      <line x1="0" y1="0" x2="900" y2="300"/><line x1="100" y1="0" x2="900" y2="200"/>
+      <line x1="200" y1="0" x2="900" y2="100"/><line x1="0" y1="100" x2="800" y2="300"/>
+      <line x1="0" y1="200" x2="700" y2="300"/><line x1="900" y1="0" x2="0" y2="300"/>
+    </g>
+    <!-- Crosshair (center) -->
+    <g stroke="#FF6B35" stroke-width="1.5" opacity="0.25">
+      <line x1="440" y1="100" x2="440" y2="130"/>
+      <line x1="440" y1="170" x2="440" y2="200"/>
+      <line x1="390" y1="150" x2="420" y2="150"/>
+      <line x1="460" y1="150" x2="490" y2="150"/>
+      <circle cx="440" cy="150" r="20" fill="none"/>
+      <circle cx="440" cy="150" r="3" fill="#FF6B35"/>
+    </g>
+    <!-- Ammo belt pattern (bottom) -->
+    <g fill="#FF6B35" opacity="0.06">
+      <rect x="50" y="265" width="8" height="20" rx="2"/>
+      <rect x="65" y="265" width="8" height="20" rx="2"/>
+      <rect x="80" y="265" width="8" height="20" rx="2"/>
+      <rect x="95" y="265" width="8" height="20" rx="2"/>
+      <rect x="110" y="265" width="8" height="20" rx="2"/>
+      <rect x="125" y="265" width="8" height="20" rx="2"/>
+      <rect x="740" y="265" width="8" height="20" rx="2"/>
+      <rect x="755" y="265" width="8" height="20" rx="2"/>
+      <rect x="770" y="265" width="8" height="20" rx="2"/>
+      <rect x="785" y="265" width="8" height="20" rx="2"/>
+      <rect x="800" y="265" width="8" height="20" rx="2"/>
+      <rect x="815" y="265" width="8" height="20" rx="2"/>
+    </g>
+    <!-- Muzzle flash glow -->
+    <circle cx="150" cy="120" r="50" fill="url(#muzzle)"/>
+    <circle cx="750" cy="180" r="40" fill="url(#muzzle)"/>
+    <!-- Tactical corner brackets -->
+    <g stroke="#FF6B35" stroke-width="2" fill="none" opacity="0.3">
+      <path d="M30,30 L70,30 L70,35 M30,30 L30,70 L35,70"/>
+      <path d="M870,30 L830,30 L830,35 M870,30 L870,70 L865,70"/>
+      <path d="M30,270 L70,270 L70,265 M30,270 L30,230 L35,230"/>
+      <path d="M870,270 L830,270 L830,265 M870,270 L870,230 L865,230"/>
+    </g>
+    <!-- Title -->
+    <text x="450" y="90" font-family="Impact,Arial Black,sans-serif" font-size="44" font-weight="900" fill="#FF6B35" text-anchor="middle" filter="url(#cfglow)" letter-spacing="3">CROSSFIRE</text>
+    <text x="450" y="125" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="600" fill="#AAAAAA" text-anchor="middle" letter-spacing="12">CHEAT TABLE</text>
+    <!-- Feature pills -->
+    <g font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="600">
+      <rect x="170" y="155" width="85" height="22" rx="3" fill="#FF6B35" opacity="0.2" stroke="#FF6B35" stroke-width="0.8"/>
+      <text x="212" y="170" fill="#FF6B35" text-anchor="middle">WALLHACK</text>
+      <rect x="270" y="155" width="75" height="22" rx="3" fill="#FF6B35" opacity="0.2" stroke="#FF6B35" stroke-width="0.8"/>
+      <text x="307" y="170" fill="#FF6B35" text-anchor="middle">AIMBOT</text>
+      <rect x="360" y="155" width="90" height="22" rx="3" fill="#FF6B35" opacity="0.2" stroke="#FF6B35" stroke-width="0.8"/>
+      <text x="405" y="170" fill="#FF6B35" text-anchor="middle">NO RECOIL</text>
+      <rect x="465" y="155" width="75" height="22" rx="3" fill="#FF6B35" opacity="0.2" stroke="#FF6B35" stroke-width="0.8"/>
+      <text x="502" y="170" fill="#FF6B35" text-anchor="middle">SPEED</text>
+      <rect x="555" y="155" width="80" height="22" rx="3" fill="#FF6B35" opacity="0.2" stroke="#FF6B35" stroke-width="0.8"/>
+      <text x="595" y="170" fill="#FF6B35" text-anchor="middle">GHOST</text>
+      <rect x="650" y="155" width="90" height="22" rx="3" fill="#FF6B35" opacity="0.2" stroke="#FF6B35" stroke-width="0.8"/>
+      <text x="695" y="170" fill="#FF6B35" text-anchor="middle">WEAPONS</text>
+    </g>
+    <!-- Version -->
+    <text x="450" y="220" font-family="Consolas,monospace" font-size="12" fill="#666" text-anchor="middle">v5.8 � Cheat Engine 7.5+</text>
+    <!-- Horizontal tactical line -->
+    <line x1="100" y1="245" x2="800" y2="245" stroke="#FF6B35" stroke-width="0.5" opacity="0.15" stroke-dasharray="8,4"/>
+  </g>
+</svg>
